@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+section aside {
+  background: #212227;
+}
+/* Contenedor: perfil */
+aside .perfil {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+aside .imagen-perfil {
+  border-radius: 100px;
+  width: 200px;
+  height: 200px;
+  border: solid 10px white;
+}
+
+/* Contenedor: Descripcion */
+
+aside .descripcion {
+  padding: 0 40px;
+  padding-bottom: 20px;
+}
+
+/* Contenedor: Redes Sociales */
+
+aside .redes-sociales {
+  padding: 0 40px;
+  padding-bottom: 20px;
+}
+
+aside .redes-sociales .enlaces {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+aside .redes-sociales .enlace-item a {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+aside .redes-sociales .enlace-item a:hover {
+  color: #637074;
+}
+
+/* Contenedor: Habilidades */
+
+aside .habilidades {
+  padding: 0 40px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+aside .habilidades .indicador {
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+  background: white;
+  position: relative;
+  z-index: 1000;
+  float: right;
+  border-radius: 20px;
+}
+
+aside .habilidades .indicador::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  border-radius: 20px;
+  width: attr(data-valor) * 10%;
+  background: rgb(99, 112, 116);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 112, 116, 0.7791491596638656) 0%,
+    rgba(99, 112, 116, 0.8379726890756303) 35%,
+    rgba(99, 112, 116, 1) 100%
+  );
+  height: 100%;
+}
+aside .indicador[data-valor="1"]::after {
+  width: 10%;
+}
+aside .indicador[data-valor="2"]::after {
+  width: 20%;
+}
+aside .indicador[data-valor="3"]::after {
+  width: 30%;
+}
+aside .indicador[data-valor="4"]::after {
+  width: 40%;
+}
+aside .indicador[data-valor="5"]::after {
+  width: 50%;
+}
+aside .indicador[data-valor="6"]::after {
+  width: 60%;
+}
+aside .indicador[data-valor="7"]::after {
+  width: 70%;
+}
+aside .indicador[data-valor="8"]::after {
+  width: 80%;
+}
+aside .indicador[data-valor="9"]::after {
+  width: 90%;
+}
+aside .indicador[data-valor="10"]::after {
+  width: 100%;
+}
+aside p,
+aside a {
+  color: white;
+}
+
+/* Main */
+section main {
+  padding: 40px;
+
+}
+
+section main h1 {
+  font-size: 40px;
+}

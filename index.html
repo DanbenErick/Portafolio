@@ -6,49 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio | Danben</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://file.myfontastic.com/7dzAMUHau9iBXNuJJQJe6C/icons.css" rel="stylesheet">
 </head>
 <body>
   <section>
     <aside>
       <div class="perfil">
         <div class="imagen">
-          <img src="" alt="">
+          <img src="assets/images/avatar/avatar.jpg" alt="Foto de Perfil" class="imagen-perfil">
         </div>
       </div>
       <div class="descripcion">
-        <p></p>
+        <p>Soy <b>Danben BARRETO</b>, apasionado por el Desarrollo Web, mis habilidades con ciertas tecnologias se podras ver mas abajo</p>
       </div>
       <div class="redes-sociales">
-        <p></p>
+        <ul class="enlaces">
+          <li class="enlace-item"><a class="icon-github" href="https://github.com/DanbenErick"></a></li>
+          <li class="enlace-item"><a class="icon-twitter" href="#"></a></li>
+          <li class="enlace-item"><a class="icon-linkedin" href="https://www.linkedin.com/in/danben-cruz-barreto-211b39185/"></a></li>
+          <li class="enlace-item"><a class="icon-email" href="mailto: danbencb08@outlook.es"></a></li>
+        </ul>
       </div>
       <div class="habilidades">
-        <p>HTML <span class="indicador"></span></p>
-        <p>CSS <span class="indicador"></span></p>
-        <p>SASS <span class="indicador"></span></p>
-        <p>JS <span class="indicador"></span></p>
-        <p>React <span class="indicador"></span></p>
-        <p>React Router <span class="indicador"></span></p>
-        <p>Redux <span class="indicador"></span></p>
-        <p>TypeScript <span class="indicador"></span></p>
-        <p>Webpack <span class="indicador"></span></p>
-        <p>NodeJS <span class="indicador"></span></p>
-        <p>Express <span class="indicador"></span></p>
+        <p>HTML         <span data-valor="9" class="indicador"></span></p>
+        <p>CSS          <span data-valor="8" class="indicador"></span></p>
+        <p>SASS         <span data-valor="8" class="indicador"></span></p>
+        <p>JS           <span data-valor="8" class="indicador"></span></p>
+        <p>React        <span data-valor="8" class="indicador"></span></p>
+        <p>React Router <span data-valor="7" class="indicador"></span></p>
+        <p>Redux        <span data-valor="7" class="indicador"></span></p>
+        <p>TypeScript   <span data-valor="6" class="indicador"></span></p>
+        <p>Webpack      <span data-valor="5" class="indicador"></span></p>
+        <p>NodeJS       <span data-valor="5" class="indicador"></span></p>
+        <p>Express      <span data-valor="6" class="indicador"></span></p>
+        <p>PHP          <span data-valor="7" class="indicador"></span></p>
+        <p>Laravel      <span data-valor="7" class="indicador"></span></p>
+        <p>PostgreSQL   <span data-valor="6" class="indicador"></span></p>
+        <p>MySQL        <span data-valor="6" class="indicador"></span></p>
       </div>
     </aside>
-    <section>
+    <main>
       <h1>Proyectos Realizados</h1>
+      <!-- Cards -->
       <div class="card">
         <div class="imagen-card">
-          <img src="" alt="">
+          <img src="assets/images/projects/project_1.png" alt="">
+        </div>
+        <div class="descripcion-card">
+          <p>Este proyecto se creo para poder buscar la informacion de una persona con solo su DNI, se realizo el con: <b>HTML, PureCSS, Vanilla JS</b> </p>
+        </div>
+        <div class="enlaces-card">
+          <a href="#">Ir al repositorio</a>
         </div>
       </div>
-      <div class="descripcion-card">
-        
+
+      <div class="card">
+        <div class="imagen-card">
+          <img src="assets/images/projects/project_2.png" alt="">
+        </div>
+        <div class="descripcion-card">
+          <p>Este proyecto es para poder hacer un busqueda de pokemones por nombre e id, utizo el API publico de PokeAPI para tener los datos, se realizo con las siguientes tecnologias: <b>HTML, CSS, JS, React, React-Router, Redux, Axios</b></p>
+        </div>
+        <div class="enlaces-card">
+          <a href="#">Ir al repositorio</a>
+        </div>
       </div>
-      <div class="enlaces-card">
-        <a href="#">Ir al repositorio</a>
+
+      <div class="card">
+        <div class="imagen-card">
+          <img src="assets/images/projects/project_3.png" alt="">
+        </div>
+        <div class="descripcion-card">
+          <p>Este proyecto es un kardex, sirve para el area de almacen de una empresa, la app web funciona asincronamente, se realizo con las siguientes tecnologias: <b>HTML, CSS, JS, React, React-Router,Redux, Axios, PostgreSQL, NodeJS, Express</b></p>
+        </div>
+        <div class="enlaces-card">
+          <a href="#">Ir al repositorio</a>
+        </div>
       </div>
+
+
+
     </section>
-  </section>
+  </main>
+  <script src="assets/js/index.js"></script>
 </body>
 </html>

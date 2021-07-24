@@ -7,7 +7,7 @@ imagenes.forEach(imagen => {
       width: 1050,
       imageUrl:  imagen.getAttribute('src'),
       imageWidth: 1000,
-      // imageHeight: 3000,
+      showConfirmButton: false,
     })
   })
 })

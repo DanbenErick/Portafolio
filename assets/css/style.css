@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
 }
 
 section {
@@ -11,10 +12,14 @@ section {
   grid-template-columns: 20% 80%;
   width: 100%;
   min-height: 100vh;
+  
 }
 
 section aside {
   background: #212227;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 /* Contenedor: perfil */
 aside .perfil {
@@ -25,9 +30,8 @@ aside .perfil {
 
 aside .imagen-perfil {
   border-radius: 100px;
-  width: 200px;
-  height: 200px;
-  border: solid 10px white;
+  width: 150px;
+  height: 150px;
 }
 
 /* Contenedor: Descripcion */
@@ -35,6 +39,8 @@ aside .imagen-perfil {
 aside .descripcion {
   padding: 0 40px;
   padding-bottom: 20px;
+  text-align: justify;
+  font-weight: lighter;
 }
 
 /* Contenedor: Redes Sociales */
@@ -132,10 +138,78 @@ aside a {
 
 /* Main */
 section main {
-  padding: 40px;
+  padding: 100px;
+  max-width: 100%;
+  overflow: hidden;
+}
+main h1 {
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+main .cards img {
+  width: 100%;
+}
+main .cards img:hover {
+  cursor: pointer;
+}
+main .card {
+  box-shadow: 0px 0px 10px .5px rgba(0,0,0,.2);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  /* padding-bottom: 10px; */
+}
+main .card a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #212227;
+  border-radius: 10px;
+  padding: 5px 0px;
+  width: 100%;
+  text-align: center;
+  border: solid #212227 1px;
 
 }
 
-section main h1 {
-  font-size: 40px;
+main .card a:hover {
+  border: solid #212227 1px;
+  background: none;
+  color: black;
+}
+
+main .card p {
+  text-align: justify;
+}
+
+main .card b {
+  color: #212227;
+}
+main .card .descripcion-card, main .card .enlaces-card {
+ padding-bottom: 20px; 
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+  section aside {
+    position: static;
+  }
+  main {
+    padding: 10px !important;
+  }
+  main h1 {
+    padding-top: 30px;
+    text-align: center;
+    /* font-size: 20px; */
+  }
+  main .cards{
+    grid-template-columns: 1fr;
+  }
 }

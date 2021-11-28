@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;;
+}
+:root {
+  --color-primario: #181818;
+  --color-secundario: #1D1D1D;
+  --color-texto: #E0E0E2;
+  --color-accion: #3083DC;
+
+  --fuente-titulo: 'Montserrat', sans-serif;
+  --fuente-demas: 'Share Tech Mono', sans-serif;
+}

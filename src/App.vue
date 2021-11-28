@@ -11,12 +11,20 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  /* overflow: hidden; */
 }
 .part__1 {
+  position: sticky;
+  top: 1px;
+  height: 100vh;
   background: var(--color-primario);
 }
 .part__2 {
   background: var(--color-secundario);
+  overflow-y: auto;
 }
 
 </style>

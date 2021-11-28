@@ -1,0 +1,30 @@
+.habilidades__contenido__indicador[data-indicador="1"]::after {
+  width: 10%;
+}
+.habilidades__contenido__indicador[data-indicador="2"]::after {
+  width: 20%;
+}
+.habilidades__contenido__indicador[data-indicador="3"]::after {
+  width: 30%;
+}
+.habilidades__contenido__indicador[data-indicador="4"]::after {
+  width: 40%;
+}
+.habilidades__contenido__indicador[data-indicador="5"]::after {
+  width: 50%;
+}
+.habilidades__contenido__indicador[data-indicador="6"]::after {
+  width: 60%;
+}
+.habilidades__contenido__indicador[data-indicador="7"]::after {
+  width: 70%;
+}
+.habilidades__contenido__indicador[data-indicador="8"]::after {
+  width: 80%;
+}
+.habilidades__contenido__indicador[data-indicador="9"]::after {
+  width: 90%;
+}
+.habilidades__contenido__indicador[data-indicador="10"]::after {
+  width: 100%;
+}

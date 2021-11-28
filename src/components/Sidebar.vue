@@ -16,6 +16,9 @@
             <li>
               <router-link to="/habilidades" active-class="active">Habilidades</router-link>
             </li>
+            <li>
+              <router-link to="/demos" active-class="active">Demos</router-link>
+            </li>
           </ul>
         </div>
         <div class="Sidebar__footer">

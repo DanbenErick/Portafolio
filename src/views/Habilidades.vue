@@ -10,10 +10,18 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-                <li>Typescript</li>
+                <li>HTML
+                  <span class="habilidades__contenido__indicador" data-indicador="10"></span>
+                </li>
+                <li>CSS
+                  <span class="habilidades__contenido__indicador" data-indicador="10"></span>
+                </li>
+                <li>JS
+                  <span class="habilidades__contenido__indicador" data-indicador="9"></span>
+                </li>
+                <li>Typescript
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -23,7 +31,9 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>SASS</li>
+                <li>SASS
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -33,11 +43,21 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>React (Router, Redux, NextJS)</li>
-                <li>Vue (Vuex, Router, Nuxt)</li>
-                <li>Webpack</li>
-                <li>Angular (Router, Services, Modules)</li>
-                <li>DayJS</li>
+                <li>React (Router, Redux, NextJS)
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
+                <li>Vue (Vuex, Router, Nuxt)
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
+                <li>Webpack
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+                <li>Angular (Router, Services, Modules)
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>DayJS
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -52,11 +72,21 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Go</li>
-                <li>NodeJS</li>
-                <li>PHP</li>
+                <li>Java
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+                <li>Python
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>Go
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>NodeJS
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
+                <li>PHP
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -66,11 +96,21 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>ExpressJS</li>
-                <li>Laravel</li>
-                <li>FastAPI</li>
-                <li>Flask</li>
-                <li>Django</li>
+                <li>ExpressJS
+                  <span class="habilidades__contenido__indicador" data-indicador="9"></span>
+                </li>
+                <li>Laravel
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+                <li>FastAPI
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+                <li>Flask
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+                <li>Django
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -85,9 +125,15 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>SQL Server</li>
+                <li>MySQL
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>PostgreSQL
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>SQL Server
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -97,7 +143,9 @@
             </div>
             <div class="Habilidades__contenido">
               <ul>
-                <li>MongoDB</li>
+                <li>MongoDB
+                  <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -120,9 +168,6 @@
     margin: auto;
     align-content: center;
   }
-  .Habilidades__box {
-     
-  }
   .Habilidades__box h2 {
     font-family: var(--fuente-titulo);
     padding-bottom: 40px;
@@ -136,21 +181,13 @@
     display: block;
     width: 15%;
     height: 2px;
-    background: var(--color-accion);
+    background: white;
+    box-shadow: 2px 2px 0px 0px var(--color-accion);
     margin-bottom: 15px;
   }
 
   .Habilidades__box li {
     display: block;
-  }
-
-  .Habilidades__box li::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: var(--color-texto);
-    margin-bottom: 5px;
   }
 
   .Habilidades__tecnologias {
@@ -160,10 +197,30 @@
     box-shadow: 4px 4px 0px 0px var(--color-accion);
   }
 
+  .Habilidades__contenido {
+    padding-bottom: 15px;
+  }
 
   .Habilidades__contenido ul {
     list-style: none;
   }
+  .Habilidades__box .Habilidades__contenido li .habilidades__contenido__indicador {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color-texto);
+    margin-bottom: 5px;
+  }
+  .Habilidades__box .Habilidades__contenido li .habilidades__contenido__indicador::after {
+    content: '';
+    display: block;   
+    height: 2px;
+    background: linear-gradient(90deg, rgba(48,131,220,1) 22%, rgba(0,104,215,1) 99%);;
+    margin-bottom: 5px;
+  }
+
+  @import './../assets/css/indicador.css';
 
 </style>
 <script>

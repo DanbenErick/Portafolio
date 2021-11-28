@@ -1,25 +1,30 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import Home from '../views/Home.vue'
-import Proyectos from '../views/Proyectos.vue'
-import Habilidades from '../views/Habilidades.vue'
-
+import Home from "../views/Home.vue";
+import Proyectos from "../views/Proyectos.vue";
+import Habilidades from "../views/Habilidades.vue";
+import Demos from "../views/Demos.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'Home',
-    component: Home
+    path: "/",
+    name: "Home",
+    component: Home,
   },
   {
-    path: '/proyectos',
-    name: 'Proyectos',
-    component: Proyectos
+    path: "/proyectos",
+    name: "Proyectos",
+    component: Proyectos,
   },
   {
-    path: '/habilidades',
-    name: 'Habilidades',
-    component: Habilidades
+    path: "/habilidades",
+    name: "Habilidades",
+    component: Habilidades,
+  },
+  {
+    path: "/demos",
+    name: "Demos",
+    component: Demos,
   },
   // {
   //   path: '/about',
@@ -29,11 +34,11 @@ const routes = [
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   // }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

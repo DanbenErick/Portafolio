@@ -10,22 +10,25 @@ export default createStore({
         imagen: 'assets/img/projects/project_1.png',
         tecnologias: ['HTML', 'PureCSS', 'JS'],
         repositorio: 'https://github.com/DanbenErick/Verificacion_de_ID',
+        demo: 'https://verificacion-id.netlify.app/'
       },
       {
         id: 2,
         titulo: 'Buscador de Pokemones',
         descripcion: 'Este proyecto es para poder hacer un busqueda de pokemones por nombre e id, utizo el API publico de PokeAPI para tener los datos, se realizo con las siguientes tecnologias:',
         imagen: 'assets/img/projects/project_2.png',
-        tecnologias: ['React', 'React Router', 'Redux'],
+        tecnologias: ['React', 'Redux'],
         repositorio: 'https://github.com/DanbenErick/Buscador-de-Pokemon',
+        demo: 'https://buscador-pokemon-v1.netlify.app/'
       },
       {
         id: 3,
         titulo: 'Kardex',
         descripcion: 'Este proyecto es un kardex, sirve para el area de almacen de una empresa, la app web funciona asincronamente, se realizo con las siguientes tecnologias:',
         imagen: 'assets/img/projects/project_3.png',
-        tecnologias: ['React', 'React Router', 'Redux', 'PostgreSQL', 'Express'],
+        tecnologias: ['React', 'Redux', 'PostgreSQL', 'Express'],
         repositorio: 'https://github.com/DanbenErick/Kardex',
+        demo: ''
       },
       {
         id: 4,
@@ -34,6 +37,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_4.png',
         tecnologias: ['HTML', 'PureCSS', 'JS', 'PHP', 'MySQL'],
         repositorio: 'https://github.com/DanbenErick/Tienda-PHP',
+        demo: ''
       },
       {
         id: 5,
@@ -42,6 +46,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_5.png',
         tecnologias: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
         repositorio: 'https://github.com/DanbenErick/Administrador-de-Negocio',
+        demo: ''
       },
       {
         id: 6,
@@ -50,6 +55,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_6.png',
         tecnologias: ['HTML', 'CSS', 'Firebase'],
         repositorio: 'https://github.com/DanbenErick/Tasks-Firebase',
+        demo: 'https://tarea-firebase.netlify.app/'
       },
       {
         id: 7,
@@ -58,6 +64,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_7.png',
         tecnologias: ['HTML', 'CSS', 'PHP', 'MySQL'],
         repositorio: 'https://github.com/DanbenErick/Blog-PHP',
+        demo: ''
       },
       {
         id: 8,
@@ -66,22 +73,25 @@ export default createStore({
         imagen: 'assets/img/projects/project_8.png',
         tecnologias: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
         repositorio: 'https://github.com/DanbenErick/cas-hmpp',
+        demo: ''
       },
       {
         id: 9,
         titulo: 'E-Commerce',
         descripcion: 'Esta es una tienda virtual y registro de citas, , el proyecto se realizo con las siguientes tecnologias:',
         imagen: 'assets/img/projects/project_9.png',
-        tecnologias: ['React', 'React Router', 'Strapi', 'Paypal'],
+        tecnologias: ['React', 'Strapi', 'Paypal'],
         repositorio: 'https://github.com/DanbenErick/Verificacion_de_ID',
+        demo: 'https://danbenerick.github.io/MainServer-Ecommerce'
       },
       {
         id: 10,
         titulo: 'Dentista App',
         descripcion: 'En una app de citas para odontologia, ingresa cada medico con su DNI(123456789), el proyecto se realizo con las siguientes tecnologias:',
         imagen: 'assets/img/projects/project_10.png',
-        tecnologias: ['React', 'React Router', 'SQLite', 'UIKit'],
+        tecnologias: ['React', 'SQLite', 'UIKit'],
         repositorio: 'https://github.com/DanbenErick/Dentist-App',
+        demo: 'https://dentista-app.netlify.app/#/'
       },
       {
         id: 11,
@@ -90,6 +100,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_11.png',
         tecnologias: ['Bootstrap', 'Vue', 'Vuex', 'Vue Router'],
         repositorio: 'https://github.com/DanbenErick/pokemon-vue',
+        demo: 'https://pokemonv2-vue.netlify.app/'
       },
       {
         id: 12,
@@ -98,6 +109,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_12.png',
         tecnologias: ['Bootstrap', 'Vue', 'Vuex'],
         repositorio: 'https://github.com/DanbenErick/Task-vue',
+        demo: 'https://tarea-vue.netlify.app/'
       },
       {
         id: 13,
@@ -106,6 +118,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_13.png',
         tecnologias: ['Bootstrap', 'Flask', 'Python', 'SQLite'],
         repositorio: 'https://github.com/DanbenErick/Verificacion_de_ID',
+        demo: ''
       },
       {
         id: 14,
@@ -114,6 +127,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_14.png',
         tecnologias: ['SematicUI', 'Vue', 'Vuex', 'Vue Router'],
         repositorio: 'https://github.com/DanbenErick/Duchas-vue',
+        demo: 'https://duchas-vue.netlify.app/'
       },
       {
         id: 15,
@@ -122,6 +136,7 @@ export default createStore({
         imagen: 'assets/img/projects/project_15.png',
         tecnologias: ['BulmaCSS', 'Vue', 'Vuex', 'Vue Router'],
         repositorio: 'https://github.com/DanbenErick/actividad-vue',
+        demo: 'https://actividad-vue.netlify.app/'
       },
     ]
   },

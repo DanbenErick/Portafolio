@@ -6,7 +6,7 @@
       </div>
       <div class="Card__Hover">
         <p class="Card__Hover__title">{{ titulo }}</p>
-        <a href="#" target="_blank" class="Card__Hover__button">Demo</a>
+        <a :href="demo" target="_blank" class="Card__Hover__button">DEMO</a>
       </div>
     </div>
   </div>
@@ -17,6 +17,6 @@
 <script>
 export default {
   name: 'DemoCard',
-  props: ['id', 'titulo', 'imagen']
+  props: ['id', 'titulo', 'imagen', 'demo']
 }
 </script>

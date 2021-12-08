@@ -1,15 +1,19 @@
 <template>
   <div class="Demos">
     <div class="Demos__container">
-      <div v-for="proyecto of proyectos" :key="proyecto.id">
+      <div v-for="proyecto of demoProyectos" :key="proyecto.id">
+      <div v-show="proyecto.demo">
         <DemoCard
+          v-show="proyecto.demo"
           :id="proyecto.id"
           :titulo="proyecto.titulo"
           :descripcion="proyecto.descripcion"
           :imagen="proyecto.imagen"
           :tecnologias="proyecto.tecnologias"
           :repositorio="proyecto.repositorio"
+          :demo="proyecto.demo || ''"
         />
+        </div>
       </div>
     </div>
   </div>
@@ -32,6 +36,9 @@ export default {
   },
   computed: {
     ...mapState(["proyectos"]),
+    demoProyectos() {
+      return this.proyectos.filter(project => project.demo != '')
+    }
   },
 };
 </script>

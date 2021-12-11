@@ -138,6 +138,15 @@ export default createStore({
         repositorio: 'https://github.com/DanbenErick/actividad-vue',
         demo: 'https://actividad-vue.netlify.app/'
       },
+      {
+        id: 16,
+        titulo: 'Game Pokemon',
+        descripcion: 'Un juego para poder adivinar el pokemon que se esconde en la silueta',
+        imagen: 'assets/img/projects/project_16.png',
+        tecnologias: ['React', 'CSS', 'Sweetalert'],
+        repositorio: 'https://github.com/DanbenErick/pokemon-game',
+        demo: 'https://pokemon-conuse-game.netlify.app/'
+      }
     ]
   },
   mutations: {

@@ -117,7 +117,7 @@
         </div>
       </div>
       <div class="Habilidades__box">
-        <h2>BASE DE DATOS</h2>
+        <h2>BD Y OTROS</h2>
         <div class="Habilidades__tecnologias">
           <div class="Habilidades__tecnologias__contenido">
             <div class="Habilidades__subtitulo">
@@ -145,6 +145,27 @@
               <ul>
                 <li>MongoDB
                   <span class="habilidades__contenido__indicador" data-indicador="6"></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="Habilidades__tecnologias__contenido">
+            <div class="Habilidades__subtitulo">
+              <h3>HERRAMIENTAS</h3>
+            </div>
+            <div class="Habilidades__contenido">
+              <ul>
+                <li>Git
+                  <span class="habilidades__contenido__indicador" data-indicador="8"></span>
+                </li>
+                <li>Figma
+                  <span class="habilidades__contenido__indicador" data-indicador="9"></span>
+                </li>
+                <li>Adobe XD
+                  <span class="habilidades__contenido__indicador" data-indicador="7"></span>
+                </li>
+                <li>Postman
+                  <span class="habilidades__contenido__indicador" data-indicador="9"></span>
                 </li>
               </ul>
             </div>

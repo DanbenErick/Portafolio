@@ -1,12 +1,16 @@
 <template>
   <div class="grid">
-    <Sidebar class="part__1"/>
+    <div class="menu_rwd">
+      <span @click="aside_rwd()" >X</span>
+    </div>
+    <Sidebar class="part__1" />
     <router-view class="part__2" />
   </div>
 </template>
 
 <style>
 @import "./assets/css/variables.css";
+
 
 .grid {
   display: grid;
@@ -27,6 +31,28 @@
   overflow-y: auto;
 }
 
+.display_block {
+  display: block;
+}
+.menu_rwd {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .part__1 {
+    display: none;
+  }
+  .part__2 {
+
+  }
+}
+
 </style>
 
 <script>
@@ -36,5 +62,15 @@ export default {
   components: {
     Sidebar,
   },
+  methods: {
+    aside_rwd() {
+      console.log("Hola")
+    }
+  },
+  data() {
+    return {
+      menu_rwd: false
+    }
+  }
 };
 </script>

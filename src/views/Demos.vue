@@ -1,7 +1,7 @@
 <template>
   <div class="Demos">
     <div class="Demos__container">
-      <div v-for="proyecto of demoProyectos" :key="proyecto.id">
+      <div v-for="proyecto of demoProyectos.slice().reverse()" :key="proyecto.id">
       <div v-show="proyecto.demo">
         <DemoCard
           v-show="proyecto.demo"
@@ -37,6 +37,7 @@ export default {
   computed: {
     ...mapState(["proyectos"]),
     demoProyectos() {
+      console.log(this.proyectos.filter(project => project.demo != ''))
       return this.proyectos.filter(project => project.demo != '')
     }
   },

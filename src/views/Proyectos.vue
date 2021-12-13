@@ -1,7 +1,7 @@
 <template>
   <div class="Proyectos">
     <div class="Proyectos__container">
-      <div v-for="proyecto of proyectos" :key="proyecto.id">
+      <div v-for="proyecto of proyectos.slice().reverse()" :key="proyecto.id">
         <Card
           :id="proyecto.id"
           :titulo="proyecto.titulo"

@@ -25,6 +25,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4,250px);
 }
+@media (max-width: 480px) {
+  .Demos__container {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 <script>
 import DemoCard from "../components/DemoCard.vue";

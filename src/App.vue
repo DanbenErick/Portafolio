@@ -26,6 +26,7 @@
   top: 1px;
   height: 100vh;
   background: var(--color-primario);
+  transition: 1s;
 }
 .part__2 {
   background: var(--color-secundario);
@@ -49,6 +50,7 @@
   border-bottom: 1px solid var(--color-primario);
   color: white;
   z-index: 4000;
+  transition: 1s;
 }
 .menu_rwd_title {
   text-align: center;

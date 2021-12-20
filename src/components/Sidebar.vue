@@ -24,17 +24,17 @@
         <div class="Sidebar__footer">
           <ul>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/in/danben-cruz-barreto-211b39185/" target="_blank">
                 <i class="icon-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="https://github.com/DanbenErick" target="_blank">
                 <i class="icon-github"></i>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="mailto:danbencb08@outlook.es" target="_blank" mailme>
                 <i class="icon-mail"></i>
               </a>
             </li>

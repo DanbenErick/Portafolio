@@ -1,9 +1,11 @@
 <template>
   <div class="grid">
     <div class="menu_rwd">
-      <span @click="aside_rwd()" >X</span>
+      
+      <div class="menu_rwd_title">HOME</div>
+      <div @click="aside_rwd()" ><i :class="[ !activeMenu? 'icon-menu': 'icon-exit']"></i></div>
     </div>
-    <Sidebar class="part__1" />
+    <Sidebar class="part__1" :class="[ !activeMenu ? 'show': '' ]" />
     <router-view class="part__2" />
   </div>
 </template>
@@ -11,14 +13,13 @@
 <style>
 @import "./assets/css/variables.css";
 
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .part__1 {
   position: sticky;
@@ -35,23 +36,47 @@
   display: block;
 }
 .menu_rwd {
+  font-family: var(--fuente-demas);
+  background: var(--color-primario);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
+  border-bottom: 1px solid var(--color-primario);
   color: white;
+  z-index: 2000;
 }
+.menu_rwd_title {
+  text-align: center;
+  letter-spacing: 10px
+}
+
+
 @media (max-width: 480px) {
   .grid {
     grid-template-columns: 1fr;
   }
   .part__1 {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
   }
   .part__2 {
 
   }
+  .show {
+    display: block;
+  }
 }
+
 
 </style>
 
@@ -64,12 +89,15 @@ export default {
   },
   methods: {
     aside_rwd() {
-      console.log("Hola")
+      // console.log("Hola")
+      this.activeMenu = this.activeMenu ? false : true
+    },
+    menu_rwd() {
     }
   },
   data() {
     return {
-      menu_rwd: false
+      activeMenu: false,
     }
   }
 };

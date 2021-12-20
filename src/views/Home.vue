@@ -43,7 +43,6 @@
     text-align: center;
   }
   .Home__header .Home__header__avatar img {
-    
     width: 150px;
     height: 150;
     border-radius: 50%;
@@ -79,6 +78,22 @@
     border-left: none;
     border-top: none;
   }
+
+  @media (max-width: 480px) {
+    .Home__main {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      max-height: 100vh;
+      
+    }
+    .Home__section__description {
+      margin: auto;
+      width: 80%;
+    }
+}
 </style>
 
 <script>

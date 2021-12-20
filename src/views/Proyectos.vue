@@ -22,6 +22,11 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4,250px);
 }
+@media (max-width: 480px) {
+  .Proyectos__container {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 
 <script>

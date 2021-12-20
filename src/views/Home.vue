@@ -87,11 +87,14 @@
       justify-content: center;
       height: 100vh;
       max-height: 100vh;
-      
     }
     .Home__section__description {
       margin: auto;
       width: 80%;
+    }
+    .Home__section__description p {
+      padding: 20px;
+      text-align: center;
     }
 }
 </style>

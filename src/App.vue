@@ -2,10 +2,10 @@
   <div class="grid">
     <div class="menu_rwd">
       
-      <div class="menu_rwd_title">HOME</div>
+      <div class="menu_rwd_title">PORTAFOLIO</div>
       <div @click="aside_rwd()" ><i :class="[ !activeMenu? 'icon-menu': 'icon-exit']"></i></div>
     </div>
-    <Sidebar class="part__1" :class="[ !activeMenu ? 'show': '' ]" />
+    <Sidebar class="part__1" :class="[ !activeMenu ? '': 'show' ]" />
     <router-view class="part__2" />
   </div>
 </template>
@@ -48,11 +48,11 @@
   width: 100%;
   border-bottom: 1px solid var(--color-primario);
   color: white;
-  z-index: 2000;
+  z-index: 4000;
 }
 .menu_rwd_title {
   text-align: center;
-  letter-spacing: 10px
+  letter-spacing: 5px
 }
 
 

@@ -186,7 +186,7 @@
     width: 80%;
     height: 80vh;
     grid-gap: 20px;
-    margin: auto;
+    margin: 0 auto;
     align-content: center;
   }
   .Habilidades__box h2 {
@@ -240,6 +240,22 @@
     background: linear-gradient(90deg, rgba(48,131,220,1) 22%, rgba(0,104,215,1) 99%);;
     margin-bottom: 5px;
   }
+
+  @media (max-width: 480px) {
+  .Habilidades__container {
+    grid-template-columns: 1fr;
+    margin: 430px auto;
+    width: 90%;
+    height: 100%;
+    overflow: show;
+  }
+  .Habilidades__box {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+}
 
   @import './../assets/css/indicador.css';
 

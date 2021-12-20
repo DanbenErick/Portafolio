@@ -39,7 +39,7 @@
 .menu_rwd {
   font-family: var(--fuente-demas);
   background: var(--color-primario);
-  display:flex;
+  display:none;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
@@ -76,6 +76,9 @@
   }
   .show {
     display: block;
+  }
+  .menu_rwd {
+    display:flex;
   }
 }
 

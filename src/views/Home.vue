@@ -25,11 +25,30 @@
 </template>
 
 <style scoped>
+  h1 {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+
+    animation: typing 2s  steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+  }
+  @keyframes blink { 
+    50% { border-color: transparent}
+  }
+
   .Home__main {
     padding: 150px 0;
   }
   
   .Home__header .Home__header__title {
+    display: flex;
+    justify-content: center;
     padding-bottom: 15px;
   }
   .Home__header .Home__header__title h1 {
